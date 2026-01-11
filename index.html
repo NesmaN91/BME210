@@ -14,137 +14,132 @@
     :root{
       --nau-blue:#003466;
       --nau-gold:#FFD200;
-      --white:#ffffff;
       --light-bg:#f4f7f9;
       --text:#1f2937;
     }
-
-    html { scroll-behavior: smooth; }
-
+    html { scroll-behavior:smooth; }
     body{
-      font-family: "Crimson Pro", serif;
-      color: var(--text);
-      background-color: var(--light-bg);
-      font-size: 1.1rem;
-      line-height: 1.6;
+      font-family:"Crimson Pro",serif;
+      color:var(--text);
+      background:var(--light-bg);
+      font-size:1.1rem;
+      line-height:1.65;
     }
-
     h1,h2,h3,h4,.navbar-brand{
-      font-family: "Montserrat", sans-serif;
-      text-transform: uppercase;
-      font-weight: 700;
-      letter-spacing: .5px;
+      font-family:"Montserrat",sans-serif;
+      text-transform:uppercase;
+      font-weight:700;
+      letter-spacing:.5px;
     }
 
     /* Navbar */
     .navbar{
-      background-color: var(--nau-blue);
-      border-bottom: 4px solid var(--nau-gold);
+      background:var(--nau-blue);
+      border-bottom:4px solid var(--nau-gold);
     }
-    .navbar .nav-link,
-    .navbar .navbar-brand{
-      color: #fff !important;
-    }
-    .navbar .nav-link:hover,
-    .navbar .nav-link:focus{
-      color: var(--nau-gold) !important;
-    }
-    .dropdown-menu{
-      border-top: 3px solid var(--nau-gold);
-    }
+    .navbar .nav-link,.navbar .navbar-brand{ color:#fff !important; }
+    .navbar .nav-link:hover,.navbar .nav-link:focus{ color:var(--nau-gold) !important; }
+    .dropdown-menu{ border-top:3px solid var(--nau-gold); }
+    [id]{ scroll-margin-top:90px; }
 
     /* Hero */
     .hero{
-      background-color: var(--nau-blue);
-      color: #fff;
-      padding: 80px 0;
-      text-align: center;
-      border-bottom: 8px solid var(--nau-gold);
+      background:var(--nau-blue);
+      color:#fff;
+      padding:80px 0;
+      text-align:center;
+      border-bottom:8px solid var(--nau-gold);
     }
-    .hero h1{
-      font-size: 2.3rem;
-      letter-spacing: 1px;
-      margin-bottom: .25rem;
-    }
-    .hero .sub{
-      color: var(--nau-gold);
-      font-weight: 700;
-      margin-bottom: 1.25rem;
-    }
+    .hero h1{ font-size:2.3rem; margin-bottom:.25rem; }
+    .hero .sub{ color:var(--nau-gold); font-weight:700; }
 
     /* Sections */
-    main.container { padding-bottom: 40px; }
-    section { padding: 60px 0; }
+    section{ padding:60px 0; }
     .section-title{
       text-align:center;
-      margin-bottom: 28px;
-      position: relative;
+      margin-bottom:28px;
+      position:relative;
     }
     .section-title::after{
       content:"";
       width:60px;height:4px;
-      background: var(--nau-gold);
+      background:var(--nau-gold);
       display:block;
-      margin: 10px auto 0;
-      border-radius: 2px;
+      margin:10px auto 0;
+      border-radius:2px;
     }
-    .card,
+
+    /* Panels/Cards */
     .panel{
-      border: none;
-      background: #fff;
-      box-shadow: 0 4px 12px rgba(0,0,0,.08);
-      border-radius: 14px;
+      background:#fff;
+      border:none;
+      border-radius:14px;
+      box-shadow:0 4px 12px rgba(0,0,0,.08);
     }
 
     /* Feature cards */
     .feature-icon{
       background:#fff;
-      border-radius: 14px;
-      padding: 26px;
+      border-radius:14px;
+      padding:26px;
       text-align:center;
-      transition: transform .2s ease, border-color .2s ease;
-      box-shadow: 0 5px 15px rgba(0,0,0,.05);
-      height: 100%;
-      border-top: 5px solid var(--nau-blue);
+      box-shadow:0 5px 15px rgba(0,0,0,.05);
+      height:100%;
+      border-top:5px solid var(--nau-blue);
+      transition:transform .2s ease,border-color .2s ease;
     }
     .feature-icon:hover{
-      transform: translateY(-6px);
-      border-top-color: var(--nau-gold);
+      transform:translateY(-6px);
+      border-top-color:var(--nau-gold);
     }
     .feature-icon i{
-      font-size: 2.3rem;
-      color: var(--nau-blue);
-      margin-bottom: 14px;
+      font-size:2.3rem;
+      color:var(--nau-blue);
+      margin-bottom:14px;
     }
 
     /* Tables */
     .table-nau thead{
-      background-color: var(--nau-blue);
+      background:var(--nau-blue);
       color:#fff;
     }
 
     /* Policy box */
     .policy-box{
       background:#fff;
-      padding: 18px;
-      border-left: 5px solid var(--nau-blue);
-      border-radius: 12px;
-      height: 100%;
-      box-shadow: 0 4px 12px rgba(0,0,0,.06);
+      padding:18px;
+      border-left:5px solid var(--nau-blue);
+      border-radius:12px;
+      height:100%;
+      box-shadow:0 4px 12px rgba(0,0,0,.06);
     }
 
-    /* Footer */
+    /* Requirement accordion icons */
+    .req-title i{
+      color:var(--nau-blue);
+      width:1.25rem;
+      text-align:center;
+      margin-right:.5rem;
+    }
+    .mini-head{
+      font-family:"Montserrat",sans-serif;
+      font-weight:700;
+      text-transform:uppercase;
+      letter-spacing:.4px;
+      font-size:.9rem;
+      color:var(--nau-blue);
+      margin-top:.75rem;
+      margin-bottom:.25rem;
+    }
+
     footer{
-      background: var(--nau-blue);
+      background:var(--nau-blue);
       color:#fff;
-      padding: 40px 0;
-      border-top: 5px solid var(--nau-gold);
+      padding:40px 0;
+      border-top:5px solid var(--nau-gold);
     }
     footer a{ color:#fff; }
-    footer a:hover, footer a:focus{ color: var(--nau-gold); }
-
-    /* Offset anchors so sticky navbar doesn't cover headings */
-    [id] { scroll-margin-top: 90px; }
+    footer a:hover,footer a:focus{ color:var(--nau-gold); }
   </style>
 </head>
 
@@ -165,7 +160,6 @@
         <ul class="navbar-nav ms-auto align-items-lg-center">
           <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
 
-          <!-- CLICKABLE dropdown: data-bs-auto-close="outside" keeps it open while clicking inside -->
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#"
                id="assignmentsDropdown"
@@ -177,6 +171,7 @@
             </a>
             <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="assignmentsDropdown">
               <li><a class="dropdown-item" href="#assessments">Grading Breakdown</a></li>
+              <li><a class="dropdown-item" href="#requirements">Course Requirements Overview</a></li>
               <li><a class="dropdown-item" href="#major-tasks">Major Assignments</a></li>
               <li><a class="dropdown-item" href="#ic-project">IC Signature Assignment</a></li>
             </ul>
@@ -187,9 +182,7 @@
           <li class="nav-item"><a class="nav-link" href="#slo">SLOs</a></li>
 
           <li class="nav-item ms-lg-3">
-            <a class="btn btn-warning fw-bold" href="mailto:nrn55@nau.edu">
-              Contact
-            </a>
+            <a class="btn btn-warning fw-bold" href="mailto:nrn55@nau.edu">Contact</a>
           </li>
         </ul>
       </div>
@@ -256,7 +249,7 @@
       </div>
     </section>
 
-    <!-- GRADING -->
+    <!-- GRADING (UPDATED TOTAL = 350) -->
     <section id="assessments">
       <div class="panel p-4 p-md-5">
         <h2 class="section-title">Grading Breakdown</h2>
@@ -272,12 +265,12 @@
             </thead>
             <tbody>
               <tr><td>Attendance</td><td>Participation across 29 class meetings</td><td class="text-center">60</td></tr>
-              <tr><td>Group Participation</td><td>Active whole-class and small-group engagement</td><td class="text-center">80</td></tr>
-              <tr><td>Interconnected Map</td><td>12 weekly reading engagement submissions</td><td class="text-center">60</td></tr>
-              <tr><td>PLC Memos</td><td>Professional Learning Community reflections (5 total)</td><td class="text-center">20</td></tr>
-              <tr><td>Identity Paper</td><td>Self-reflection on positionality</td><td class="text-center">15</td></tr>
-              <tr><td>Life History Report</td><td>Interview-based narrative assignment</td><td class="text-center">15</td></tr>
-              <tr><td>IC Signature Assignment</td><td>Multi-stage project (paper + showcase)</td><td class="text-center">100</td></tr>
+              <tr><td>Group Discussion Participation</td><td>Active whole-class and small-group engagement</td><td class="text-center">40</td></tr>
+              <tr><td>Weekly Reading / Interconnected Map</td><td>12 weekly reading engagement submissions</td><td class="text-center">60</td></tr>
+              <tr><td>PLC Group Participation &amp; Memos</td><td>Professional Learning Community reflections</td><td class="text-center">20</td></tr>
+              <tr><td>Identity Self-Reflection</td><td>Self-reflection on positionality</td><td class="text-center">10</td></tr>
+              <tr><td>Life History Report</td><td>Interview-based narrative assignment</td><td class="text-center">10</td></tr>
+              <tr><td>IC Signature Assignment</td><td>Multi-stage project (paper + showcase)</td><td class="text-center">150</td></tr>
               <tr class="fw-bold bg-light"><td>Total Possible</td><td></td><td class="text-center">350</td></tr>
             </tbody>
           </table>
@@ -285,15 +278,270 @@
 
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <div class="card bg-light border border-warning p-3 text-center">
-              <h5 class="mb-1">Grading Scale</h5>
-              <!-- FIXED: use &lt; for "<" -->
+            <div class="panel border border-warning p-3 text-center">
+              <h5 class="mb-1">Grading Scale (out of 350)</h5>
+              <!-- UPDATED SCALE -->
               <p class="mb-0">
-               A:315–350 | B: 280–314 | C: 245–279 | D: 210–244 | F: &lt; 210
-
+                A: 315–350 | B: 280–314 | C: 245–279 | D: 210–244 | F: &lt; 210
               </p>
             </div>
           </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- COURSE REQUIREMENTS OVERVIEW (NEW) -->
+    <section id="requirements">
+      <div class="panel p-4 p-md-5">
+        <h2 class="section-title">Course Requirements Overview</h2>
+        <p class="text-center mb-4">
+          Welcome to our course! Below is a clear guide to each course requirement, what it involves, why it matters,
+          how to do it well, when it’s due, and how it’s graded.
+        </p>
+
+        <div class="accordion" id="requirementsAccordion">
+
+          <!-- Weekly Map Reflections -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="reqOneHead">
+              <button class="accordion-button fw-bold req-title" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#reqOne"
+                      aria-expanded="true" aria-controls="reqOne">
+                <i class="fa-solid fa-diagram-project" aria-hidden="true"></i>
+                Weekly Reading / Interconnected Map Reflections (12 total, 60 points)
+              </button>
+            </h2>
+            <div id="reqOne" class="accordion-collapse collapse show" aria-labelledby="reqOneHead" data-bs-parent="#requirementsAccordion">
+              <div class="accordion-body">
+                <div class="mini-head">What it is &amp; Why it matters</div>
+                <p class="mb-2">
+                  Every week you will complete the assigned readings and create an “interconnected map” reflection.
+                  You’ll draw a simple concept map or outline showing how key ideas from the readings connect, and write
+                  a short reflection about those connections. This turns passive reading into active learning and helps
+                  you deepen understanding, retention, and critical thinking.
+                </p>
+
+                <div class="mini-head">How to do it well</div>
+                <ol class="mb-2">
+                  <li><strong>Do the weekly reading actively:</strong> take notes/highlight key points and questions.</li>
+                  <li><strong>Create your concept map:</strong> map key themes and show how ideas connect (boxes/arrows, flowchart, or outline).</li>
+                  <li><strong>Write a short reflection:</strong> explain the connections, insights, and why it matters; use specific examples or a quote.</li>
+                  <li><strong>Submit on time each week:</strong> follow the schedule (typically due by the end of the week).</li>
+                </ol>
+
+                <div class="mini-head">When it’s due</div>
+                <p class="mb-2">
+                  Due weekly (12 weeks total). Check the course schedule for the exact weekly due day/time.
+                </p>
+
+                <div class="mini-head">Grading</div>
+                <p class="mb-0">
+                  About 5 points each week (5 × 12 = 60). Full credit requires both a map and reflection with genuine engagement,
+                  connections across ideas, and specific support from the text.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- PLC -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="reqTwoHead">
+              <button class="accordion-button collapsed fw-bold req-title" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#reqTwo"
+                      aria-expanded="false" aria-controls="reqTwo">
+                <i class="fa-solid fa-people-group" aria-hidden="true"></i>
+                PLC Group Participation and Memos (20 points)
+              </button>
+            </h2>
+            <div id="reqTwo" class="accordion-collapse collapse" aria-labelledby="reqTwoHead" data-bs-parent="#requirementsAccordion">
+              <div class="accordion-body">
+                <div class="mini-head">What it is &amp; Why it matters</div>
+                <p class="mb-2">
+                  You will be part of a PLC (Professional Learning Community) group. You will meet regularly to discuss
+                  course topics, support each other’s learning, and practice collaboration—just like educators do in real PLCs.
+                </p>
+
+                <div class="mini-head">What you’ll do</div>
+                <ul class="mb-2">
+                  <li>Participate in small-group meetings (in class or as instructed).</li>
+                  <li>Submit short PLC memos after certain meetings, summarizing what your group discussed and what you learned.</li>
+                </ul>
+
+                <div class="mini-head">How to do it well</div>
+                <ul class="mb-2">
+                  <li><strong>Be prepared:</strong> complete readings before PLC time so you can contribute.</li>
+                  <li><strong>Keep notes:</strong> jot key points during meetings for easier memo writing.</li>
+                  <li><strong>Write clear memos:</strong> focus, key conclusions, your takeaway, and any next steps.</li>
+                  <li><strong>Be consistent:</strong> show up and contribute respectfully and constructively.</li>
+                </ul>
+
+                <div class="mini-head">When it’s due</div>
+                <p class="mb-2">
+                  PLC meetings and memos occur periodically throughout the course. Follow the schedule for specific weeks/due dates.
+                </p>
+
+                <div class="mini-head">Grading</div>
+                <p class="mb-0">
+                  Graded on participation quality and memo completeness/insight. Strong work shows you contributed, captured key ideas,
+                  and reflected thoughtfully.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Attendance -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="reqThreeHead">
+              <button class="accordion-button collapsed fw-bold req-title" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#reqThree"
+                      aria-expanded="false" aria-controls="reqThree">
+                <i class="fa-solid fa-calendar-check" aria-hidden="true"></i>
+                Attendance (60 points across 29 sessions)
+              </button>
+            </h2>
+            <div id="reqThree" class="accordion-collapse collapse" aria-labelledby="reqThreeHead" data-bs-parent="#requirementsAccordion">
+              <div class="accordion-body">
+                <div class="mini-head">What it is &amp; Why it matters</div>
+                <p class="mb-2">
+                  Attendance is worth 60 points across 29 sessions (about 2 points per class). Being present supports your learning
+                  through discussion, activities, and community building.
+                </p>
+
+                <div class="mini-head">How it works</div>
+                <ul class="mb-2">
+                  <li>Each session you attend and participate in contributes points toward the total.</li>
+                  <li>If you must miss due to an unavoidable issue, communicate as soon as possible.</li>
+                  <li>Be punctual and stay the full session.</li>
+                </ul>
+
+                <div class="mini-head">Tips to maximize points</div>
+                <ul class="mb-2">
+                  <li>Prioritize class time like an appointment.</li>
+                  <li>Communicate early if an emergency occurs.</li>
+                  <li>Be mentally present and engaged.</li>
+                </ul>
+
+                <div class="mini-head">Grading</div>
+                <p class="mb-0">
+                  60/60 for full attendance. Missing classes reduces points (roughly 2 points per absence). Policies for excused absences
+                  will be clarified in course policies.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Group Discussion Participation -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="reqFourHead">
+              <button class="accordion-button collapsed fw-bold req-title" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#reqFour"
+                      aria-expanded="false" aria-controls="reqFour">
+                <i class="fa-solid fa-comments" aria-hidden="true"></i>
+                Group Discussion Participation (40 points)
+              </button>
+            </h2>
+            <div id="reqFour" class="accordion-collapse collapse" aria-labelledby="reqFourHead" data-bs-parent="#requirementsAccordion">
+              <div class="accordion-body">
+                <div class="mini-head">What it is &amp; Why it matters</div>
+                <p class="mb-2">
+                  This course emphasizes discussion. Participation points reflect your engagement in whole-class and small-group discussions
+                  across the semester.
+                </p>
+
+                <div class="mini-head">How to earn points</div>
+                <ul class="mb-2">
+                  <li><strong>Come prepared:</strong> complete readings and bring at least one question or idea.</li>
+                  <li><strong>Contribute thoughtfully:</strong> ask questions, build on peers’ ideas, and connect to course concepts.</li>
+                  <li><strong>Listen and engage:</strong> participation also includes respectful listening and responding.</li>
+                  <li><strong>Be consistent:</strong> aim to contribute regularly throughout the course.</li>
+                </ul>
+
+                <div class="mini-head">Grading</div>
+                <p class="mb-0">
+                  Based on frequency, quality/relevance, preparedness, and respectful engagement. Strong participation adds value to shared learning.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Identity Self Reflection -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="reqFiveHead">
+              <button class="accordion-button collapsed fw-bold req-title" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#reqFive"
+                      aria-expanded="false" aria-controls="reqFive">
+                <i class="fa-solid fa-user-pen" aria-hidden="true"></i>
+                Identity Self-Reflection (10 points)
+              </button>
+            </h2>
+            <div id="reqFive" class="accordion-collapse collapse" aria-labelledby="reqFiveHead" data-bs-parent="#requirementsAccordion">
+              <div class="accordion-body">
+                <div class="mini-head">What it is &amp; Why it matters</div>
+                <p class="mb-2">
+                  A one-time reflection exploring your identity and how it shapes your perspectives. Self-awareness is foundational for intercultural learning.
+                </p>
+
+                <div class="mini-head">How to do it well</div>
+                <ul class="mb-2">
+                  <li>Be personal and sincere (write in first person).</li>
+                  <li>Include examples and experiences that shaped you.</li>
+                  <li>Connect to course themes when possible.</li>
+                  <li>Organize clearly and proofread.</li>
+                </ul>
+
+                <div class="mini-head">When it’s due</div>
+                <p class="mb-2">Typically early in the course (check the schedule for the exact date).</p>
+
+                <div class="mini-head">Grading</div>
+                <p class="mb-0">Graded on completion and depth. Full credit shows genuine reflection, clarity, and attention to the prompt.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Life History Report -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="reqSixHead">
+              <button class="accordion-button collapsed fw-bold req-title" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#reqSix"
+                      aria-expanded="false" aria-controls="reqSix">
+                <i class="fa-solid fa-microphone-lines" aria-hidden="true"></i>
+                Life History Report (10 points)
+              </button>
+            </h2>
+            <div id="reqSix" class="accordion-collapse collapse" aria-labelledby="reqSixHead" data-bs-parent="#requirementsAccordion">
+              <div class="accordion-body">
+                <div class="mini-head">What it is &amp; Why it matters</div>
+                <p class="mb-2">
+                  Interview someone about their life experiences and write a short report connecting their story to course themes.
+                  This builds empathy, listening skills, and qualitative thinking.
+                </p>
+
+                <div class="mini-head">What to do</div>
+                <ol class="mb-2">
+                  <li>Select a person willing to share.</li>
+                  <li>Prepare guiding questions.</li>
+                  <li>Conduct the interview (take notes or record with permission).</li>
+                  <li>Write the report: who you interviewed, key life highlights, and reflection/connection to course themes.</li>
+                </ol>
+
+                <div class="mini-head">How to excel</div>
+                <ul class="mb-2">
+                  <li>Use specific details/quotes to show strong listening.</li>
+                  <li>Connect clearly to course concepts.</li>
+                  <li>Include your takeaway and what you learned.</li>
+                  <li>Write clearly and keep a professional tone.</li>
+                </ul>
+
+                <div class="mini-head">When it’s due</div>
+                <p class="mb-2">Typically mid-to-late course (check the schedule for the exact date).</p>
+
+                <div class="mini-head">Grading</div>
+                <p class="mb-0">Graded on completion, clarity of the interview-based narrative, and thoughtful reflection/connection to course themes.</p>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
@@ -307,13 +555,13 @@
           <h2 class="accordion-header" id="headingMap">
             <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#mapInfo"
                     aria-expanded="true" aria-controls="mapInfo">
-              1. Reflective Interactive Map (60 pts)
+              1. Weekly Reading / Interconnected Map (60 pts)
             </button>
           </h2>
           <div id="mapInfo" class="accordion-collapse collapse show" aria-labelledby="headingMap" data-bs-parent="#assignmentAccordion">
             <div class="accordion-body">
-              Each week, respond to readings (70–100 words) connecting them to your identity map. Include
-              <strong>Theme, Insights, Connections, and Reflection</strong>.
+              Each week, respond to readings (70–100 words) connecting them to your identity map.
+              Include <strong>Theme, Insights, Connections, and Reflection</strong>.
             </div>
           </div>
         </div>
@@ -322,12 +570,12 @@
           <h2 class="accordion-header" id="headingPlc">
             <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#plc"
                     aria-expanded="false" aria-controls="plc">
-              2. PLC Memos (20 pts)
+              2. PLC Participation &amp; Memos (20 pts)
             </button>
           </h2>
           <div id="plc" class="accordion-collapse collapse" aria-labelledby="headingPlc" data-bs-parent="#assignmentAccordion">
             <div class="accordion-body">
-              Meet with your group to discuss cycle readings. Submit a memo (250–300 words) with member names.
+              Meet with your group to discuss readings. Submit PLC memos as assigned.
             </div>
           </div>
         </div>
@@ -336,70 +584,67 @@
           <h2 class="accordion-header" id="headingIdentity">
             <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#identityPaper"
                     aria-expanded="false" aria-controls="identityPaper">
-              3. Identity Self-Reflection (15 pts)
+              3. Identity Self-Reflection (10 pts)
             </button>
           </h2>
           <div id="identityPaper" class="accordion-collapse collapse" aria-labelledby="headingIdentity" data-bs-parent="#assignmentAccordion">
             <div class="accordion-body">
-              At least 2 pages (double-spaced). Expand on classroom identity activities and personal constructs.
+              Reflect on your identity and positionality. Follow prompt and schedule for due date.
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- IC PROJECT -->
+    <!-- IC PROJECT (POINTS UPDATED TO 150 to match total = 350) -->
     <section id="ic-project">
       <div class="panel p-4 p-md-5">
         <h2 class="section-title">
           <i class="fas fa-award me-2" aria-hidden="true"></i>
-          Intercultural Competence Project (100 pts)
+          Intercultural Competence Project (150 pts)
         </h2>
-
         <p class="text-center mb-4">A semester-long signature project exploring culture, language, and power.</p>
 
         <div class="row g-3">
           <div class="col-md-6">
             <div class="policy-box">
-              <h6 class="mb-1">Dimension 1: Knowledge (10 pts)</h6>
+              <h6>Dimension 1: Knowledge</h6>
               <p class="small mb-0">Identify a culture/community; baseline of beliefs and positionality (2–3 pages).</p>
             </div>
           </div>
-
           <div class="col-md-6">
             <div class="policy-box">
-              <h6 class="mb-1">Dimension 2: Education (10 pts)</h6>
+              <h6>Dimension 2: Education</h6>
               <p class="small mb-0">Research historical and linguistic contexts via academic sources (2–3 pages, APA).</p>
             </div>
           </div>
-
           <div class="col-md-6">
             <div class="policy-box">
-              <h6 class="mb-1">Dimension 3: Skills (10 pts)</h6>
+              <h6>Dimension 3: Skills</h6>
               <p class="small mb-0">Community interaction/interview and reflective commentary on experience.</p>
             </div>
           </div>
-
           <div class="col-md-6">
             <div class="policy-box">
-              <h6 class="mb-1">Dimension 4: Relate (10 pts)</h6>
+              <h6>Dimension 4: Relate</h6>
               <p class="small mb-0">Synthesis of how your understanding changed (1–2 pages).</p>
             </div>
           </div>
 
           <div class="col-12">
-            <div class="card border border-primary p-4">
-              <h5 class="text-primary text-center mb-2">Final Phase: Paper (40 pts) &amp; Showcase (20 pts)</h5>
+            <div class="panel border border-primary p-4">
+              <h5 class="text-primary text-center mb-2">Final Phase</h5>
               <p class="small text-center mb-0">
-                Combine all dimensions into one APA 7 cohesive paper and present your insights in the end-of-semester showcase.
+                Final paper + showcase components are included in the 150-point IC project total.
               </p>
             </div>
           </div>
         </div>
+
       </div>
     </section>
 
-    <!-- SCHEDULE -->
+    <!-- SCHEDULE (kept as-is from your original; edit if you want point-aligned wording) -->
     <section id="schedule">
       <h2 class="section-title">Course Schedule</h2>
 
@@ -415,11 +660,11 @@
           <tbody>
             <tr><td>Week 1 (Jan 12)</td><td>Overview</td><td>Map setup; PLC formation; Map #1 due Jan 18</td></tr>
             <tr><td>Week 2 (Jan 19)</td><td>Identity (MLK Day)</td><td>Map #2; <strong>PLC Memo #1</strong> due Jan 25</td></tr>
-            <tr><td>Week 3 (Jan 26)</td><td>Ideology &amp; Power</td><td>Map #3; <strong>Identity Paper</strong> due Feb 1</td></tr>
+            <tr><td>Week 3 (Jan 26)</td><td>Ideology &amp; Power</td><td>Map #3; <strong>Identity Reflection</strong> due Feb 1</td></tr>
             <tr><td>Week 4 (Feb 2)</td><td>Intercultural Competence</td><td>Map #4; <strong>IC Dimension 1</strong> due Feb 8</td></tr>
             <tr><td>Week 5 (Feb 9)</td><td>Cultural Capital</td><td>Map #5; <strong>PLC Memo #2</strong> due Feb 15</td></tr>
             <tr><td>Week 6 (Feb 16)</td><td>Disability</td><td>Map #6 due Feb 22</td></tr>
-            <tr><td>Week 7 (Feb 23)</td><td>Multiculturalism (Novel-Home is not a country)</td><td>Map #7 due Mar 1</td></tr>
+            <tr><td>Week 7 (Feb 23)</td><td>Multiculturalism</td><td>Map #7 due Mar 1</td></tr>
             <tr><td>Week 8 (Mar 2)</td><td>Native Perspectives</td><td>Map #8; <strong>PLC Memo #3</strong> due Mar 8</td></tr>
             <tr><td colspan="3" class="text-center bg-warning fw-bold">Spring Break (Mar 9–14) — No Class</td></tr>
             <tr><td>Week 10 (Mar 16)</td><td>Language &amp; Immersion</td><td>Map #9; <strong>Life History</strong> &amp; <strong>IC Dim 2</strong> due Mar 22</td></tr>
@@ -447,7 +692,6 @@
               <li>27–29 classes: 60 pts</li>
               <li>24–26 classes: 40 pts</li>
               <li>20–23 classes: 20 pts</li>
-              <!-- FIXED: use &lt; -->
               <li>&lt; 20 classes: 0 pts</li>
             </ul>
           </div>
@@ -515,12 +759,10 @@
         alt="NAU Logo"
         style="height: 40px; margin-bottom: 18px;"
       />
-
       <p class="mb-0">BME 210: Foundations of Multicultural Education</p>
       <p class="small text-white-50 mb-3">Department of Educational Specialties | Flagstaff, AZ</p>
 
       <div class="d-flex justify-content-center gap-3">
-        <!-- Put real URLs instead of # when you have them -->
         <a href="#" class="text-white" aria-label="Facebook"><i class="fab fa-facebook fa-lg"></i></a>
         <a href="#" class="text-white" aria-label="Twitter"><i class="fab fa-twitter fa-lg"></i></a>
         <a href="#" class="text-white" aria-label="Instagram"><i class="fab fa-instagram fa-lg"></i></a>
@@ -528,10 +770,10 @@
     </div>
   </footer>
 
-  <!-- Bootstrap JS bundle (required for dropdown/collapse) -->
+  <!-- Bootstrap JS bundle (required for dropdown/collapse/accordion) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Optional: Auto-close navbar on mobile after clicking a link -->
+  <!-- Optional: auto-close navbar on mobile after clicking a link -->
   <script>
     (function () {
       const nav = document.getElementById('navbarNav');
@@ -539,14 +781,14 @@
 
       document.querySelectorAll('.navbar-nav a.nav-link, .navbar-nav .dropdown-item').forEach(link => {
         link.addEventListener('click', () => {
-          if (window.getComputedStyle(document.querySelector('.navbar-toggler')).display !== 'none') {
+          const toggler = document.querySelector('.navbar-toggler');
+          if (toggler && window.getComputedStyle(toggler).display !== 'none') {
             bsCollapse && bsCollapse.hide();
           }
         });
       });
     })();
   </script>
+
 </body>
 </html>
-
-
