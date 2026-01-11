@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BME 210: Foundations of Multicultural Education | NAU</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --nau-blue: #003466;
+            --nau-gold: #FFD200;
+            --white: #ffffff;
+            --light-bg: #f4f7f9;
+        }
+
+        body {
+            font-family: 'Crimson Pro', serif;
+            color: #333;
+            background-color: var(--light-bg);
+            font-size: 1.1rem;
+        }
+
+        h1, h2, h3, h4, .navbar-brand {
+            font-family: 'Montserrat', sans-serif;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            background-color: var(--nau-blue);
+            border-bottom: 4px solid var(--nau-gold);
+        }
+        .navbar-brand, .nav-link {
+            color: white !important;
+        }
+        .nav-link:hover {
+            color: var(--nau-gold) !important;
+        }
+        .dropdown-menu {
+            border-top: 3px solid var(--nau-gold);
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: var(--nau-blue);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+            border-bottom: 8px solid var(--nau-gold);
+        }
+        .hero h1 { font-size: 2.5rem; letter-spacing: 2px; }
+        .hero p { color: var(--nau-gold); font-weight: bold; }
+
+        /* Icon Cards */
+        .feature-icon {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            transition: 0.3s;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            height: 100%;
+            border-top: 5px solid var(--nau-blue);
+        }
+        .feature-icon:hover {
+            transform: translateY(-10px);
+            border-top-color: var(--nau-gold);
+        }
+        .feature-icon i {
+            font-size: 2.5rem;
+            color: var(--nau-blue);
+            margin-bottom: 15px;
+        }
+
+        /* Content Sections */
+        section { padding: 60px 0; }
+        .section-title {
+            margin-bottom: 40px;
+            text-align: center;
+            position: relative;
+        }
+        .section-title::after {
+            content: '';
+            width: 60px;
+            height: 4px;
+            background: var(--nau-gold);
+            display: block;
+            margin: 10px auto;
+        }
+
+        /* Tables & Lists */
+        .table-nau thead {
+            background-color: var(--nau-blue);
+            color: white;
+        }
+        .card { border: none; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+        .list-group-item-action:hover { background-color: #fff9e6; }
+
+        /* Policies & SLOs */
+        .policy-box {
+            background: #fff;
+            padding: 20px;
+            border-left: 5px solid var(--nau-blue);
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background: var(--nau-blue);
+            color: white;
+            padding: 40px 0;
+            border-top: 5px solid var(--nau-gold);
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">BME 210 | NAU</a>
+        <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Assignments</a>
+                    <ul class="dropdown-menu shadow">
+                        <li><a class="dropdown-item" href="#assessments">Grading Breakdown</a></li>
+                        <li><a class="dropdown-item" href="#ic-project">Intercultural Project</a></li>
+                        <li><a class="dropdown-item" href="#major-tasks">Major Tasks</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#schedule">Schedule</a></li>
+                <li class="nav-item"><a class="nav-link" href="#policies">Policies</a></li>
+                <li class="nav-item"><a class="nav-link" href="#slo">SLOs</a></li>
+                <li class="nav-item ms-lg-3"><a class="btn btn-warning fw-bold" href="mailto:nrn55@nau.edu">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header class="hero">
+    <div class="container">
+        <h1 class="display-5">Foundations of Multicultural Education</h1>
+        <p class="lead mt-2">Department of Educational Specialties | Spring 2026</p>
+        <div class="mt-4">
+            <p class="mb-1 text-white"><i class="fas fa-user-tie me-2"></i>Instructor: Nesma Nasr</p>
+            <p class="text-white"><i class="fas fa-map-marker-alt me-2"></i>Mode: In Person (Section 001)</p>
+        </div>
+    </div>
+</header>
+
+<main class="container">
+
+    <section id="about">
+        <div class="row g-4">
+            <div class="col-md-12 text-center section-title">
+                <h2>Course Overview</h2>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-icon">
+                    <i class="fas fa-scroll"></i>
+                    <h4>Purpose</h4>
+                    <p class="small">Explores sociopolitical structures of schooling and meets U.S. Ethnic Diversity goals.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-icon">
+                    <i class="fas fa-book"></i>
+                    <h4>Required Text</h4>
+                    <p class="small"><em>Home Is Not a Country</em> by Safia Elhillo (Novel) & Weekly Articles on Canvas.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-icon">
+                    <i class="fas fa-clock"></i>
+                    <h4>Contact Hours</h4>
+                    <p class="small">Emails sent 6AM–6PM answered same day; others within 24 hours.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="assessments" class="bg-white p-5 rounded shadow-sm">
+        <h2 class="section-title">Grading Breakdown</h2>
+        <div class="table-responsive">
+            <table class="table table-hover table-nau border">
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Description</th>
+                        <th class="text-center">Points</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Attendance</td><td>Participation across 29 class meetings</td><td class="text-center">60</td></tr>
+                    <tr><td>Group Participation</td><td>Active whole-class and small-group engagement</td><td class="text-center">80</td></tr>
+                    <tr><td>Interconnected Map</td><td>12 Weekly Reading Engagement submissions</td><td class="text-center">60</td></tr>
+                    <tr><td>PLC Memos</td><td>Professional Learning Community reflections (5 total)</td><td class="text-center">20</td></tr>
+                    <tr><td>Identity Paper</td><td>Self-reflection on positionality</td><td class="text-center">15</td></tr>
+                    <tr><td>Life History Report</td><td>Interview-based narrative assignment</td><td class="text-center">15</td></tr>
+                    <tr><td>IC Signature Assignment</td><td>Multi-stage project (Paper + Showcase)</td><td class="text-center">100</td></tr>
+                    <tr class="fw-bold bg-light"><td>Total Possible</td><td></td><td class="text-center">400</td></tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="row mt-4">
+            <div class="col-md-6 offset-md-3">
+                <div class="card bg-light p-3 text-center border-warning">
+                    <h5>Grading Scale</h5>
+                    <p class="mb-0">A: 360-400 | B: 320-359 | C: 280-319 | D: 240-279 | F: < 240</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="major-tasks">
+        <h2 class="section-title">Major Assignments</h2>
+        <div class="accordion" id="assignmentAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header"><button class="accordion-button fw-bold" data-bs-toggle="collapse" data-bs-target="#mapInfo">1. Reflective Interactive Map (60 pts)</button></h2>
+                <div id="mapInfo" class="accordion-collapse collapse show">
+                    <div class="accordion-body">
+                        Each week, respond to readings (70-100 words) connecting them to your identity map. Include <strong>Theme, Insights, Connections, and Reflection</strong>.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header"><button class="accordion-button collapsed fw-bold" data-bs-toggle="collapse" data-bs-target="#plc">2. PLC Memos (20 pts)</button></h2>
+                <div id="plc" class="accordion-collapse collapse">
+                    <div class="accordion-body">Meet with your group to discuss cycle readings. Submit a memo (250-300 words) with member names.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header"><button class="accordion-button collapsed fw-bold" data-bs-toggle="collapse" data-bs-target="#identityPaper">3. Identity Self-Reflection (15 pts)</button></h2>
+                <div id="identityPaper" class="accordion-collapse collapse">
+                    <div class="accordion-body">At least 2 pages (double-spaced). Expand on classroom identity activities and personal constructs.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ic-project" class="bg-white p-5 rounded shadow-sm">
+        <h2 class="section-title text-primary"><i class="fas fa-award me-2"></i>Intercultural Competence Project (100 pts)</h2>
+        <p class="text-center">A semester-long signature project exploring culture, language, and power.</p>
+        <div class="row g-3">
+            <div class="col-md-6">
+                <div class="policy-box h-100">
+                    <h6>Dimension 1: Knowledge (10 pts)</h6>
+                    <p class="small">Identify a culture/community; baseline of beliefs and positionality (2-3 pages).</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="policy-box h-100">
+                    <h6>Dimension 2: Education (10 pts)</h6>
+                    <p class="small">Research historical and linguistic contexts via academic sources (2-3 pages, APA).</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="policy-box h-100">
+                    <h6>Dimension 3: Skills (10 pts)</h6>
+                    <p class="small">Community interaction/interview and reflective commentary on experience.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="policy-box h-100">
+                    <h6>Dimension 4: Relate (10 pts)</h6>
+                    <p class="small">Synthesis of how your understanding changed (1-2 pages).</p>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="card border-primary p-4">
+                    <h5 class="text-primary text-center">Final Phase: Paper (40 pts) & Showcase (20 pts)</h5>
+                    <p class="small text-center mb-0">Combine all dimensions into one APA 7 cohesive paper and present your insights in the end-of-semester showcase.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="schedule">
+        <h2 class="section-title">Course Schedule</h2>
+        <div class="table-responsive">
+            <table class="table table-bordered bg-white">
+                <thead class="table-light">
+                    <tr>
+                        <th style="width: 15%;">Week</th>
+                        <th>Topic</th>
+                        <th>To-Do / Due Dates (Sundays)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Week 1 (Jan 12)</td><td>Overview</td><td>Map Setup; PLC Formation; Map #1 Due Jan 18</td></tr>
+                    <tr><td>Week 2 (Jan 19)</td><td>Identity (MLK Day)</td><td>Map #2; <strong>PLC Memo #1</strong> Due Jan 25</td></tr>
+                    <tr><td>Week 3 (Jan 26)</td><td>Ideology & Power</td><td>Map #3; <strong>Identity Paper</strong> Due Feb 1</td></tr>
+                    <tr><td>Week 4 (Feb 2)</td><td>Intercultural Comp.</td><td>Map #4; <strong>IC Dimension 1</strong> Due Feb 8</td></tr>
+                    <tr><td>Week 5 (Feb 9)</td><td>Cultural Capital</td><td>Map #5; <strong>PLC Memo #2</strong> Due Feb 15</td></tr>
+                    <tr><td>Week 6 (Feb 16)</td><td>Disability</td><td>Map #6 Due Feb 22</td></tr>
+                    <tr><td>Week 7 (Feb 23)</td><td>Multiculturalism</td><td>Map #7 Due Mar 1</td></tr>
+                    <tr><td>Week 8 (Mar 2)</td><td>Native Perspectives</td><td>Map #8; <strong>PLC Memo #3</strong> Due Mar 8</td></tr>
+                    <tr><td colspan="3" class="text-center bg-warning fw-bold">Spring Break (Mar 9-14) - No Class</td></tr>
+                    <tr><td>Week 10 (Mar 16)</td><td>Language & Immersion</td><td>Map #9; <strong>Life History</strong> & <strong>IC Dim 2</strong> Due Mar 22</td></tr>
+                    <tr><td>Week 11 (Mar 23)</td><td>Cultural Exchange</td><td>Map #10 Due Mar 29</td></tr>
+                    <tr><td>Week 12 (Mar 30)</td><td>Migration (Novel)</td><td>Map #11; <strong>IC Dimension 3</strong> Due Apr 5</td></tr>
+                    <tr><td>Week 13 (Apr 6)</td><td>SES & Inequality</td><td>Map #12 Due Apr 12; Discussion Board Apr 8</td></tr>
+                    <tr><td>Week 14 (Apr 13)</td><td>Immigration (Novel)</td><td><strong>PLC Memo #4</strong> (Apr 12); <strong>IC Dim 4</strong> (Apr 13)</td></tr>
+                    <tr><td>Week 15 (Apr 20)</td><td>Showcase I</td><td>In-class Presentations (Mon/Wed)</td></tr>
+                    <tr><td>Week 16 (Apr 27)</td><td>Showcase II</td><td>Presentations continue through May 2</td></tr>
+                    <tr><td>Finals (May 4)</td><td>Submission</td><td><strong>Final IC Paper + Full Map</strong> Due May 6 @ 11:59PM</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section id="policies">
+        <h2 class="section-title">Course Policies</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="policy-box shadow-sm">
+                    <h5><i class="fas fa-user-check me-2"></i>Attendance</h5>
+                    <ul class="small">
+                        <li>27-29 classes: 60 pts</li>
+                        <li>24-26 classes: 40 pts</li>
+                        <li>20-23 classes: 20 pts</li>
+                        <li>< 20 classes: 0 pts</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="policy-box shadow-sm">
+                    <h5><i class="fas fa-robot me-2"></i>AI Usage</h5>
+                    <p class="small">AI permitted for minor brainstorming but requires "human in the loop." Plagiarism via AI = F (Zero pts). Be critical and interactive with AI tools.</p>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="policy-box shadow-sm">
+                    <h5>Academic Integrity</h5>
+                    <p class="small">NAU expects honesty, trustworthiness, and responsibility. Plagiarism includes using 3+ words in succession without citation. Review full policies at policy.nau.edu.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="slo" class="bg-light p-4 rounded border">
+        <h2 class="section-title">Learning Outcomes (SLO)</h2>
+        <div class="row small overflow-auto" style="max-height: 400px;">
+            <div class="col-12">
+                <ol>
+                    <li>Analyze critical issues of multicultural education in sociopolitical contexts (TESOL 2a, 2b, 2e).</li>
+                    <li>Synthesize principles to plan for culturally relevant environments (TESOL 3a).</li>
+                    <li>Describe influence of social/political identities (race, class, gender) on school policies.</li>
+                    <li>Associate cross-cultural experiences by conducting interviews (TESOL 2d).</li>
+                    <li>Analyze sociocultural narratives of diverse student backgrounds (TESOL 2c).</li>
+                    <li>Review current research via written discussions.</li>
+                    <li>Apply knowledge of political variables to English learning (TESOL 1b).</li>
+                    <li>Understand learner variables in English acquisition.</li>
+                    <li>Apply cultural values to ESL teaching.</li>
+                    <li>Address effects of racism and stereotyping in ESL.</li>
+                    <li>Use resources to learn student cultures.</li>
+                    <li>Explore schooling success factors (religion, orientation, class).</li>
+                    <li>Apply knowledge of U.S. immigration patterns.</li>
+                    <li>Review case studies and student narratives.</li>
+                    <li>Explore school climate and structural issues (safety, class size).</li>
+                    <li>Explore inequities and productive resolutions.</li>
+                    <li>Examine intergroup relations and theories of conflict.</li>
+                    <li>Analyze identities that perpetuate inequality in school structures.</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <div class="container text-center">
+        <img src="https://nau.edu/wp-content/uploads/sites/204/2018/10/nau-logo-horizontal-white.png" alt="NAU Logo" style="height: 40px; margin-bottom: 20px;">
+        <p class="mb-0">BME 210: Foundations of Multicultural Education</p>
+        <p class="small text-white-50">Department of Educational Specialties | Flagstaff, AZ</p>
+        <div class="mt-3">
+            <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
